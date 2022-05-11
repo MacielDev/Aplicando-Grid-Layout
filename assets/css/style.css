@@ -1,14 +1,23 @@
 .app {
     background: #f1f1f1;
-    display: grid;  
+    display: grid;
     font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: "cabecalho" "conteudo" "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px 100vh auto;
 }
 
 .cabecalho {
+    grid-area: cabecalho;
+    border: solid 2px green;
 }
- 
+
 .conteudo {
+    grid-area: conteudo;
+    border: 2px solid red;
 }
 
 .rodape {
+    grid-area: rodape;
+    border: solid 2px blue;
 }

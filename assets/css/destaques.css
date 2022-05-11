@@ -1,0 +1,119 @@
+/* DESTAQUES */
+
+.caixa {
+    text-align: center;
+    align-items: flex-end;
+    background: #dcdcdc;
+    display: flex;
+}
+
+.destaques {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(100vh - 50px);
+    gap: .2rem;
+}
+
+
+/* FORTNITE */
+
+.destaques__principal {
+    background-image: url('../img/fortnite.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+
+/* PUBG */
+
+.destaques__secundario:nth-child(2) {
+    background-image: url('../img/pubg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 4 / 4;
+    grid-row: 1 / 1;
+}
+
+
+/* SLACK */
+
+.destaques__secundario:nth-child(3) {
+    background-image: url('../img/slack.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 4 / 4;
+    grid-row: 2 / 3;
+}
+
+
+/* WHATSAPP */
+
+.destaques__secundario:nth-child(4) {
+    background-image: url('../img/whatsapp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* 
+        Sem utilizar shorthands
+         grid-column-start: 4;
+         grid-column-end: 4;
+         grid-row-start: 3;
+         grid-row-end: 3;
+    */
+    /* utilizando shorthands */
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+}
+
+
+/* CS GO */
+
+.destaques__secundario:nth-child(5) {
+    background-image: url('../img/cs-go.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+}
+
+
+/* DESTAQUES CATEGORIAS */
+
+.destaques__titulo {
+    background: rgba(0, 0, 0, .5);
+    color: #fdfdfd;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.destaques__categorias {
+    grid-column: 1 / 3;
+    grid-row: 3 / 3;
+}
+
+.destaques__categorias___lista {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.destaques__categorias___item {
+    width: 50%;
+    align-items: center;
+    background: #fdfdfd;
+    border-left: 5px solid transparent;
+    display: flex;
+    padding: 1rem;
+}
+
+.destaques__categorias___link {
+    color: inherit;
+}
