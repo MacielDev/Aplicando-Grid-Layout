@@ -4,20 +4,25 @@
     font-family: Arial, Helvetica, sans-serif;
     grid-template-areas: "cabecalho" "conteudo" "rodape";
     grid-template-columns: auto;
-    grid-template-rows: 50px 100vh auto;
+    grid-template-rows: 50px auto auto;
 }
 
 .cabecalho {
-    grid-area: cabecalho;
-    border: solid 2px green;
+    align-items: center;
+    display: flex;
+    padding: 0 2rem;
 }
 
 .conteudo {
     grid-area: conteudo;
-    border: 2px solid red;
+    padding: 0 2rem;
 }
 
 .rodape {
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
     grid-area: rodape;
-    border: solid 2px blue;
+    padding: 1rem;
+    text-align: center;
 }
